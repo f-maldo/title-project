@@ -22,6 +22,7 @@ class GeneratorClass(object):
         """Generate data and labels for Keras
 
         :param paths: Path to files for generation
+        :param batch_size: Size of the batch
         """
         self.batch_size = batch_size
         while 1:

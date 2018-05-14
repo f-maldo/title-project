@@ -241,5 +241,7 @@ $RECYCLE.BIN/
 # Start of personal exclusions
 Cache/*
 CompCars/*
+ImagesForFlow/*
 */Cache/*
 */CompCars/*
+*/ImagesForFlow/*
