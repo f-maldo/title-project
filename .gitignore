@@ -242,7 +242,9 @@ $RECYCLE.BIN/
 Cache/*
 CompCars/*
 ImagesForFlow/*
+TestingTraining/*
 */Cache/*
 */CompCars/*
 */ImagesForFlow/*
+*/TestingTraining/*
 ImagesForFlow.zip
