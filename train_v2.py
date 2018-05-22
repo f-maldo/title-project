@@ -5,9 +5,9 @@ from keras.preprocessing.image import ImageDataGenerator
 
 
 class CompCars(object):
-    def __init__(self, height=200, width=250, batch_size=100,
-                 train_dir='ImagesForFlow\\train',
-                 test_dir='ImagesForFlow\\test'):
+    def __init__(self, height=100, width=150, batch_size=100,
+                 train_dir='ImagesForFlow/train',
+                 test_dir='ImagesForFlow/test'):
         self.height = height
         self.width = width
         self.batch_size = batch_size
@@ -15,22 +15,23 @@ class CompCars(object):
         self.test_dir = test_dir
 
     def train(self):
-        vgg_conv = VGG16(weights='imagenet', include_top=False, input_shape=(self.height, self.width, 3))
+        vgg_conv = VGG16(weights='imagenet', include_top=False, input_shape=(height, width, 3))
+        vgg_conv.trainable = True
+        set_trainable = False
+        for layer in vgg_conv.layers:
+            if layer.name == 'block5_conv1':
+                set_trainable = True
+            if set_trainable:
+                layer.trainable = True
+            else:
+                layer.trainable = False
 
-        for layer in vgg_conv.layers[:-4]:
-            layer.trainable = False
-
-        # Create the model
         model = models.Sequential()
-
-        # Add the vgg convolutional base model
         model.add(vgg_conv)
-
-        # Add new layers
         model.add(layers.Flatten())
         model.add(layers.Dense(1024, activation='relu'))
         model.add(layers.Dropout(0.5))
-        model.add(layers.Dense(3, activation='softmax'))
+        model.add(layers.Dense(163, activation='softmax'))
 
         train_datagen = ImageDataGenerator()
         validation_datagen = ImageDataGenerator()
