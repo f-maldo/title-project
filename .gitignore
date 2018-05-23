@@ -243,8 +243,10 @@ Cache/*
 CompCars/*
 ImagesForFlow/*
 TestingTraining/*
+Models/*
 */Cache/*
 */CompCars/*
 */ImagesForFlow/*
 */TestingTraining/*
+*/Models/*
 ImagesForFlow.zip
