@@ -247,6 +247,7 @@ TestingTraining/*
 Models/*
 Logs/*
 SingleTestings/*
+UFPR-ALPR-dataset/*
 */Cache/*
 */CompCars/*
 */ImagesForFlow/*
@@ -255,4 +256,5 @@ SingleTestings/*
 */Models/*
 */Logs/*
 */SingleTestings/*
+*/UFPR-ALPR-dataset/*
 ImagesForFlow.zip
