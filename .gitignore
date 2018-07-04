@@ -249,6 +249,7 @@ Logs/*
 SingleTestings/*
 UFPR-ALPR-dataset/*
 LPD/*
+LPD2/*
 */Cache/*
 */CompCars/*
 */ImagesForFlow/*
@@ -259,4 +260,5 @@ LPD/*
 */SingleTestings/*
 */UFPR-ALPR-dataset/*
 */LPD/*
+*/LPD2/*
 ImagesForFlow.zip
