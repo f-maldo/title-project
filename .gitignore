@@ -250,7 +250,7 @@ SingleTestings/*
 UFPR-ALPR-dataset/*
 LPD/*
 LPD2/*
-CDCarCom*/*
+CD*/*
 */Cache/*
 */CompCars/*
 */ImagesForFlow/*
@@ -263,4 +263,4 @@ CDCarCom*/*
 */LPD/*
 */LPD2/*
 ImagesForFlow.zip
-*/CDCarCom*/*
+*/CD*/*
